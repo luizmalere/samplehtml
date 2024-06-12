@@ -1,0 +1,23 @@
+<html>
+    <head><title>Current Date Page</title></head>
+<body>
+    <div>
+      <h2>The current date and time is:</h2>
+      <p id="date-container"></p> <!-- This is where the date and time will be displayed -->
+    </div>
+  
+    <script>
+        // Function to get the current date and time
+        function getCurrentDateAndTime() {
+        const dateTime = new Date();
+        return dateTime.toLocaleString();
+        }
+
+        // Target an HTML element to display the current date and time
+        const dateDisplay = document.getElementById("date-container");
+
+        // Set the innerHTML of the element to the current date and time returned by the function
+        dateDisplay.innerHTML = getCurrentDateAndTime();
+    </script> <!-- This is where the JavaScript code that modifies the date and time element is located -->
+</body>
+</html>
